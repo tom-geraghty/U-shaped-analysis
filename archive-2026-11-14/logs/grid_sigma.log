@@ -1,0 +1,8 @@
+sigma2=1 | lambda=LOO | straight line | top<0: 95% | line(.8)<0 at top: 73% | bottom<0: 89% | peak pct 45 | mid +0.212 top -0.121 | median lambda 14.7 | 150 runs
+sigma2=1 | lambda=LOO | paper's reading (peak at 4.75) | top<0: 92% | line(.8)<0 at top: 89% | bottom<0: 88% | peak pct 28 | mid +0.196 top -0.109 | median lambda 14.7 | 150 runs
+sigma2=2 | lambda=LOO | straight line | top<0: 86% | line(.8)<0 at top: 62% | bottom<0: 81% | peak pct 43 | mid +0.232 top -0.065 | median lambda 13.6 | 150 runs
+sigma2=2 | lambda=LOO | paper's reading (peak at 4.75) | top<0: 89% | line(.8)<0 at top: 81% | bottom<0: 64% | peak pct 24 | mid +0.214 top -0.082 | median lambda 13.5 | 150 runs
+sigma2=4 | lambda=LOO | straight line | top<0: 65% | line(.8)<0 at top: 52% | bottom<0: 65% | peak pct 43 | mid +0.245 top +0.002 | median lambda 11.9 | 150 runs
+sigma2=4 | lambda=LOO | paper's reading (peak at 4.75) | top<0: 82% | line(.8)<0 at top: 79% | bottom<0: 32% | peak pct 23 | mid +0.227 top -0.049 | median lambda 7.5 | 150 runs
+sigma2=8 | lambda=LOO | straight line | top<0: 27% | line(.8)<0 at top: 28% | bottom<0: 31% | peak pct 43 | mid +0.249 top +0.045 | median lambda 9.9 | 150 runs
+sigma2=8 | lambda=LOO | paper's reading (peak at 4.75) | top<0: 71% | line(.8)<0 at top: 77% | bottom<0: 1% | peak pct 22 | mid +0.234 top -0.026 | median lambda 6.3 | 150 runs

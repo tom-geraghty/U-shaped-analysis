@@ -1,0 +1,2 @@
+S2 | straight line | r(x,y) 0.17 | D=2 | top<0: 93% | line<0 at top (.8/.5/.3): 78% / 90% / 94% | bottom<0: 93% | peak pct 50 | mid effect +0.132, top -0.059 | n top 8-15 | 200 runs
+S2 | paper's reading (performance peaks then falls) | r(x,y) 0.17 | D=2 | top<0: 90% | line<0 at top (.8/.5/.3): 88% / 90% / 90% | bottom<0: 90% | peak pct 36 | mid effect +0.142, top -0.065 | n top 8-14 | 200 runs

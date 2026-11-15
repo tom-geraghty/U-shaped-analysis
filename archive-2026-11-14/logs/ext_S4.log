@@ -1,0 +1,3 @@
+S4 | straight line | r(x,y) 0.46 | D=5 | top<0: 48% | line<0 at top (.8/.5/.3): 45% / 59% / 63% | bottom<0: 59% | peak pct 50 | mid effect +0.261, top +0.007 | n top 3-6 | 300 runs
+S4 | paper's reading (performance peaks then falls) | r(x,y) 0.44 | D=5 | top<0: 82% | line<0 at top (.8/.5/.3): 86% / 90% / 87% | bottom<0: 30% | peak pct 34 | mid effect +0.245, top -0.055 | n top 3-5 | 300 runs
+There were 50 or more warnings (use warnings() to see the first 50)

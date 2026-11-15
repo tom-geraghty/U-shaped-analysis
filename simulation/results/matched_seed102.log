@@ -1,0 +1,2 @@
+S1 | rises then flat above the mean | r(x,y) 0.25 | D=2 | top<0: 76% | line<0 at top (.8/.5/.3): 87% / 76% / 70% | bottom<0: 61% | peak pct 17 | mid effect +0.216, top -0.063 | n top 12-22 | 100 runs
+S1 | paper's reading (performance peaks then falls) | r(x,y) 0.27 | D=2 | top<0: 82% | line<0 at top (.8/.5/.3): 81% / 82% / 84% | bottom<0: 68% | peak pct 24 | mid effect +0.234, top -0.088 | n top 12-30 | 100 runs

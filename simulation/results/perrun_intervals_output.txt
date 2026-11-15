@@ -1,0 +1,18 @@
+
+straight line (200 datasets)
+  plot negative in top 2.5% of safety scores: 171/200 = 86%  (95% interval 80% to 90%)
+  footnote-4 smoothed line (f=.8) negative at top: 129/200 = 64%  (95% interval 58% to 71%)
+  smoothed line (f=.5) negative at top: 159/200 = 80%  (95% interval 73% to 85%)
+  plot negative in bottom 2.5%: 162/200 = 81%  (95% interval 75% to 86%)
+
+rises then flat above the mean (200 datasets)
+  plot negative in top 2.5% of safety scores: 155/200 = 78%  (95% interval 71% to 83%)
+  footnote-4 smoothed line (f=.8) negative at top: 169/200 = 84%  (95% interval 79% to 89%)
+  smoothed line (f=.5) negative at top: 153/200 = 76%  (95% interval 70% to 82%)
+  plot negative in bottom 2.5%: 144/200 = 72%  (95% interval 65% to 78%)
+
+paper's reading (performance peaks then falls) (200 datasets)
+  plot negative in top 2.5% of safety scores: 172/200 = 86%  (95% interval 81% to 90%)
+  footnote-4 smoothed line (f=.8) negative at top: 158/200 = 79%  (95% interval 73% to 84%)
+  smoothed line (f=.5) negative at top: 167/200 = 84%  (95% interval 78% to 88%)
+  plot negative in bottom 2.5%: 126/200 = 63%  (95% interval 56% to 69%)

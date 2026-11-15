@@ -1,0 +1,4 @@
+Straight line | top<0: 83% | line<0 at top (.8/.5/.3): 66% / 79% / 86% | bottom<0: 77% | peak pct: 44 | median lambda 13.1, sigma 2.48 | n top 12-21
+Study 1's own quadratic (min 2.48) | top<0: 53% | line<0 at top (.8/.5/.3): 10% / 40% / 61% | bottom<0: 94% | peak pct: 72 | median lambda 8.2, sigma 2.47 | n top 12-24
+Rises, then flat above the mean | top<0: 76% | line<0 at top (.8/.5/.3): 90% / 83% / 75% | bottom<0: 64% | peak pct: 19 | median lambda 13.0, sigma 2.47 | n top 12-23
+A real downturn (peak at 4.0) | top<0: 94% | line<0 at top (.8/.5/.3): 95% / 94% / 94% | bottom<0: 46% | peak pct: 20 | median lambda 13.1, sigma 2.47 | n top 12-23
