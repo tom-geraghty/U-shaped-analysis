@@ -26,7 +26,7 @@ The second and third rows come from `study1_matched_signal.R`, in which the nois
 
 ```
 apt-get update && apt-get install -y --no-install-recommends r-base-core
-git clone https://github.com/cran/KRLS && R CMD INSTALL KRLS
+git clone https://github.com/cran/KRLS && git -C KRLS checkout f71767c && R CMD INSTALL KRLS   # KRLS 1.7-1
 Rscript simulation/study1_official_perrun.R S1 100 101
 Rscript simulation/study1_official_perrun.R S1 100 102
 Rscript simulation/study1_matched_signal.R S1 100 101
@@ -38,11 +38,48 @@ The same seeds reproduce the saved files exactly. The scripts set the kernel wid
 
 **Checks** (`simulation/checks/`): the same run under KRLS 1.0-0 (identical results), and on a safety grid of 0.05, which is where the dots in the paper's Figure 1 sit (straight line 66%, flattening 82%, fall 79%).
 
-**Limits.** Study 1 only. The figures depend on the kernel width and the smoothing span, which the paper does not report: at four times the default width the straight-line figure falls to about 28% (`archive-2026-11-14/logs/grid_sigma.log`). The made-up data follow the paper's published descriptive statistics, not its data. A negative end to the smoothed line is a reading of a plot, not a test.
+**Limits.** Study 1 only (the fall-size runs below cover all five studies). The figures depend on the kernel width and the smoothing span, which the paper does not report: at four times the default width the straight-line figure falls to about 28% (`archive-2026-11-14/logs/grid_sigma.log`). The made-up data follow the paper's published descriptive statistics, not its data. A negative end to the smoothed line is a reading of a plot, not a test.
+
+## How large a fall? (`simulation/fall-size/`, added 17 Nov 2026)
+
+**Question.** The published figures imply falls at the top of about 0.01 to 0.08 scale points, each with a fall at the bottom of similar or greater size (`digitisation/published_falls.py`). How often do data with and without a real fall produce falls like these?
+
+**Method.** Stand-ins for all five studies, built from each study's published descriptives (Study 3's are not published and are assumed). Same KRLS settings and smoothing as above. In each dataset the smoothed line is added up to rebuild the outcome curve, as for the published figures, and the fall at the top and bottom is measured in scale points. 200 datasets per curve per study.
+
+**Results** (share of datasets with a fall at the top at least as large as the published one):
+
+| Study (published fall at the top) | Straight line | Real fall | Flattening |
+|---|---|---|---|
+| 1 (0.018) | 34% | 67% | 78% |
+| 2 in-role (0.080) | 15% | 32% | 45% |
+| 3 (0.025) | 24% | 65% | 66% |
+| 4 (0.011) | 21% | 49% | 74% |
+| 5 service (0.071) | 32% | 48% | 62% |
+
+Where the line fell at the top, a fall at the bottom at least as large appeared in 35% to 69% of straight-line datasets, 10% to 15% under a real fall and 3% to 8% under a flattening. The published falls at the bottom are larger than any of these curves usually produce (3% to 18% of straight-line datasets reach them). Full output: `simulation/fall-size/fallsize_summary.log`.
+
+**To re-run** (about an hour run one after another; Study 5 takes most of it, and the runs can go in parallel):
+
+```
+cd simulation/fall-size
+Rscript fallsize_study1.R 100 201 && Rscript fallsize_study1.R 100 202
+mv fallsize_seed201.csv fallsize_S1_seed201.csv && mv fallsize_seed202.csv fallsize_S1_seed202.csv
+for s in S2 S3 S4 S5; do Rscript fallsize_all.R $s 100 301; Rscript fallsize_all.R $s 100 302; done
+Rscript fallsum.R S1 S2 S3 S4 S5
+```
+
+A fresh clone reproduced `fallsize_S4_seed301.csv` byte for byte on 17 Nov 2026. Exact equality was checked on the platform in `simulation/sessionInfo.txt` (R 4.3.3, reference BLAS); another linear-algebra library may change the last digits.
+
+## Re-running everything: what you need
+
+- R (tested on 4.3.3) and KRLS 1.7-1, pinned as above. Python 3 with numpy for the digitised falls and intervals.
+- Nothing else for the simulations: they use only the paper's published statistics, which are written into the scripts. Please check those against Tables 1 to 10 of the paper; they are the assumptions most worth a second look.
+- The paper's PDF, only if you want to redo the digitisation from the images. We cannot include it.
+- **Not yet in this repository:** the reading of Figure 5 (Study 4) behind its published falls (top 0.011, bottom 0.07). Those two numbers are hard-coded in `fallsum.R` until the reading is added.
 
 ## The digitised figures (`digitisation/`)
 
-Readings of the lines and dots in the paper's Figures 1 to 8, taken from the 300 dpi images embedded in the published PDF. The scripts that produced them are in `archive-2026-11-14/code/` (`digitise.py`, `digitise_all.py`, `digitise_bands.py`, `digitise_fig1.py`). They need the paper's PDF, from which the figures are extracted with `pdfimages -png`. The PDF and its images are not included here.
+Readings of the lines and dots in the paper's Figures 1 to 8, taken from the 300 dpi images embedded in the published PDF. The scripts that produced them are in `archive-2026-11-14/code/` (`digitise.py`, `digitise_all.py`, `digitise_bands.py`, `digitise_fig1.py`). They need the paper's PDF, from which the figures are extracted with `pdfimages -png`. The PDF and its images are not included here. `published_falls.py` recomputes the implied falls from the saved readings without the PDF (`published_falls_output.txt`).
 
 ## Archive (`archive-2026-11-14/`)
 
