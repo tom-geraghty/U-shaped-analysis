@@ -42,7 +42,7 @@ The same seeds reproduce the saved files exactly. The scripts set the kernel wid
 
 ## How large a fall? (`simulation/fall-size/`, added 17 Nov 2026)
 
-**Question.** The published figures imply falls at the top of about 0.01 to 0.08 scale points, each with a fall at the bottom of similar or greater size (`digitisation/published_falls.py`). How often do data with and without a real fall produce falls like these?
+**Question.** The published figures imply falls at the top of about 0.01 to 0.08 scale points, each with a fall at the bottom of similar or greater size on the lines the paper reads (`digitisation/published_falls.py`). For Study 4 that line (Fig. 5, solid) omits the two units with safety scores below 3; the paper's dashed line over the full sample stays at about +0.2 below a score of 4, so on the full sample Study 4 has no fall at the bottom. That dashed line was read by eye from the figure and is not digitised here, because it runs among the dots and under the solid line above about 6.6. How often do data with and without a real fall produce falls like these?
 
 **Method.** Stand-ins for all five studies, built from each study's published descriptives (Study 3's are not published and are assumed). Same KRLS settings and smoothing as above. In each dataset the smoothed line is added up to rebuild the outcome curve, as for the published figures, and the fall at the top and bottom is measured in scale points. 200 datasets per curve per study.
 
