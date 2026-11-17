@@ -4,3 +4,4 @@ Fig 2b (Study 2, in-role): range 1.01 to 7.00; rise 0.578; fall at the top 0.080
 Fig 3 (Study 3, in-role): range 2.38 to 3.97; rise 0.069; fall at the top 0.025; fall at the bottom 0.052
 Fig 7a (Study 5, service): range 1.88 to 4.40; rise 0.243; fall at the top 0.071; fall at the bottom 0.073
 Fig 7b (Study 5, productivity): range 1.88 to 4.40; rise 24.967; fall at the top 0.000; fall at the bottom 0.000
+Fig 5 (Study 4, unit performance, solid line): range 3.41 to 7.00; rise 0.560; fall at the top 0.011; fall at the bottom 0.070

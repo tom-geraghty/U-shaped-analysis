@@ -75,7 +75,7 @@ A fresh clone reproduced `fallsize_S4_seed301.csv` byte for byte on 17 Nov 2026.
 - R (tested on 4.3.3) and KRLS 1.7-1, pinned as above. Python 3 with numpy for the digitised falls and intervals.
 - Nothing else for the simulations: they use only the paper's published statistics, which are written into the scripts. Please check those against Tables 1 to 10 of the paper; they are the assumptions most worth a second look.
 - The paper's PDF, only if you want to redo the digitisation from the images. We cannot include it.
-- **Not yet in this repository:** the reading of Figure 5 (Study 4) behind its published falls (top 0.011, bottom 0.07). Those two numbers are hard-coded in `fallsum.R` until the reading is added.
+- Figure 5 (Study 4) was read on 17 Nov 2026 with `digitisation/digitise_fig5.py` (solid line, the paper's restricted sample). The published falls in `fallsum.R` are typed in from `digitisation/published_falls_output.txt`.
 
 ## The digitised figures (`digitisation/`)
 

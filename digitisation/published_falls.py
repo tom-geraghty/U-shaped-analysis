@@ -3,13 +3,15 @@
 Adds the plotted slope up along the line (trapezium rule) to rebuild the outcome curve, then reports the rise,
 the fall from its highest point to the top of the range, and the fall from the bottom of the range to its lowest
 point. Needs only numpy; the paper's PDF is not required. Run: python3 digitisation/published_falls.py
-Study 4 (Fig. 5) is not in digitised_all.npy; its values (top 0.011, bottom 0.07) are not reproducible from this repo yet.
+Study 4 (Fig. 5, solid line) is read from fig5_digitised.npz, made by digitise_fig5.py (17 Nov 2026).
 """
 import os
 import numpy as np
 
 here = os.path.dirname(os.path.abspath(__file__))
 d = np.load(os.path.join(here, "digitised_all.npy"), allow_pickle=True).item()
+f5 = np.load(os.path.join(here, "fig5_digitised.npz"))
+d["Fig 5 (Study 4, unit performance, solid line)"] = {"lx": f5["lx"], "ly": f5["ly"]}
 for name, v in d.items():
     xs, ys = np.asarray(v["lx"], float), np.asarray(v["ly"], float)
     o = np.argsort(xs); xs, ys = xs[o], ys[o]
