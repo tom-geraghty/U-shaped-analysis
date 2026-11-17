@@ -1,0 +1,25 @@
+
+== S1  observed top 0.018 bottom 0.230
+straight line                    n 200 | top fall  62% | size if any 0.024 [0.001, 0.056] | >= obs top  34% | bottom 0.029 [0.000, 0.145], >= obs bottom   3% | bot>=top given top  69%
+rises then flat above the mean   n 200 | top fall  88% | size if any 0.082 [0.016, 0.165] | >= obs top  78% | bottom 0.000 [0.000, 0.048], >= obs bottom   0% | bot>=top given top   7%
+paper's reading (peaks then falls) n 200 | top fall  88% | size if any 0.051 [0.005, 0.137] | >= obs top  67% | bottom 0.000 [0.000, 0.053], >= obs bottom   0% | bot>=top given top  15%
+
+== S2  observed top 0.080 bottom 0.120
+straight line                    n 200 | top fall  80% | size if any 0.032 [0.003, 0.130] | >= obs top  15% | bottom 0.023 [0.000, 0.113], >= obs bottom   9% | bot>=top given top  45%
+rises then flat above the mean   n 200 | top fall  91% | size if any 0.079 [0.011, 0.322] | >= obs top  45% | bottom 0.001 [0.000, 0.056], >= obs bottom   2% | bot>=top given top   8%
+paper's reading (peaks then falls) n 200 | top fall  90% | size if any 0.048 [0.008, 0.213] | >= obs top  32% | bottom 0.003 [0.000, 0.047], >= obs bottom   1% | bot>=top given top  13%
+
+== S3  observed top 0.025 bottom 0.052
+straight line                    n 200 | top fall  70% | size if any 0.016 [0.004, 0.073] | >= obs top  24% | bottom 0.013 [0.000, 0.054], >= obs bottom  12% | bot>=top given top  43%
+rises then flat above the mean   n 200 | top fall  96% | size if any 0.047 [0.006, 0.156] | >= obs top  66% | bottom 0.000 [0.000, 0.025], >= obs bottom   3% | bot>=top given top   8%
+paper's reading (peaks then falls) n 200 | top fall  96% | size if any 0.045 [0.005, 0.125] | >= obs top  64% | bottom 0.000 [0.000, 0.018], >= obs bottom   2% | bot>=top given top  10%
+
+== S4  observed top 0.011 bottom 0.070
+straight line                    n 200 | top fall  43% | size if any 0.010 [0.001, 0.033] | >= obs top  21% | bottom 0.004 [0.000, 0.060], >= obs bottom   6% | bot>=top given top  35%
+rises then flat above the mean   n 200 | top fall  96% | size if any 0.036 [0.004, 0.156] | >= obs top  74% | bottom 0.000 [0.000, 0.010], >= obs bottom   0% | bot>=top given top   6%
+paper's reading (peaks then falls) n 200 | top fall  86% | size if any 0.015 [0.002, 0.071] | >= obs top  49% | bottom 0.000 [0.000, 0.008], >= obs bottom   0% | bot>=top given top  12%
+
+== S5  observed top 0.071 bottom 0.073
+straight line                    n 200 | top fall  93% | size if any 0.047 [0.010, 0.121] | >= obs top  32% | bottom 0.030 [0.000, 0.106], >= obs bottom  18% | bot>=top given top  39%
+rises then flat above the mean   n 200 | top fall  96% | size if any 0.095 [0.031, 0.210] | >= obs top  62% | bottom 0.007 [0.000, 0.052], >= obs bottom   5% | bot>=top given top   3%
+paper's reading (peaks then falls) n 200 | top fall  94% | size if any 0.073 [0.023, 0.224] | >= obs top  48% | bottom 0.003 [0.000, 0.049], >= obs bottom   6% | bot>=top given top  10%
