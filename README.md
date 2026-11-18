@@ -56,7 +56,7 @@ The same seeds reproduce the saved files exactly. The scripts set the kernel wid
 | 4 (0.011) | 21% | 49% | 74% |
 | 5 service (0.071) | 32% | 48% | 62% |
 
-Where the line fell at the top, a fall at the bottom at least as large appeared in 35% to 69% of straight-line datasets, 10% to 15% under a real fall and 3% to 8% under a flattening. The published falls at the bottom are larger than any of these curves usually produce (3% to 18% of straight-line datasets reach them). Full output: `simulation/fall-size/fallsize_summary.log`.
+Where the line fell at the top, a fall at the bottom at least as large appeared in 35% to 69% of straight-line datasets, 10% to 15% under a real fall and 3% to 8% under a flattening. The published falls at the bottom are larger than any of these curves usually produce (3% to 18% of straight-line datasets reach them). Full output: `simulation/fall-size/fallsize_summary.log`. The comparisons for Studies 2 to 5 are exploratory: their stand-ins leave out the grouping and repeated measures of the real studies, Study 2's outcome scale is our construction, and Study 3's descriptives are assumed. A skewed-tenure version of Study 1 changes nothing beyond chance (`simulation/checks/tenure-skew-2026-11-18/`).
 
 **To re-run** (about an hour run one after another; Study 5 takes most of it, and the runs can go in parallel):
 
