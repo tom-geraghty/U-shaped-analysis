@@ -6,7 +6,7 @@ All four were re-run here on 18 Nov 2026 (Python 3, numpy, scipy, pandas, statsm
 
 None of them uses the official KRLS package. They use Study 1 stand-ins built from the paper's published moments, much as ours do.
 
-## Power test (`power-test-2026-11-18/`) — the useful one
+## Power test (`power-test-2026-11-18/`): the useful one
 
 **Question.** If performance really did fall by the 0.0184 points read from Figure 1, beyond a score of 4.75, could Study 1's data detect it?
 
@@ -18,11 +18,11 @@ None of them uses the official KRLS package. They use Study 1 stand-ins built fr
 
 **Checks on its assumptions.** Slope 0.27 below the knot and residual SD 0.72 agree with Table 1 (r = .26, outcome SD .752: slope about .26, residual SD about .73). The scores are on sevenths and clipped at 5, as in ours. Limits are in its README: a kinked line, not KRLS; assumed distributions; a known knot.
 
-## Influence test (`influence-test-2026-11-18/`) — modest
+## Influence test (`influence-test-2026-11-18/`): modest
 
 Perturbs or deletes one to five of the roughly 13 people above 4.75 and records how often the fitted slope there changes sign. Deleting five at random flips the sign in about 22% of datasets, under a real 0.0184 fall and under a flat line alike; significance rarely changes, because the slope is near zero to begin with. It shows that the top-end estimate rests on a handful of people, which the paper's own counts already show (`eldor-paper-scaffold`, T2). Not needed for the paper.
 
-## Joint-claim test (`joint-claim-2026-11-17/`) — adds nothing new
+## Joint-claim test (`joint-claim-2026-11-17/`): adds nothing new
 
 Re-analyses the Python pilot's saved runs (no new fits; `eldor_python_extended/per_run.csv` is an identical copy of `../python-extended-2026-11-17/per_run.csv`, kept so the script runs as supplied). It counts datasets where the line is positive at 4, negative at the top, and implies a fall of at least 0.0184: straight line 19% to 25%, real fall 47% to 53%, flattening 37% to 49%. The rule was set after seeing the results, and the estimator is not KRLS (see `python-extended-2026-11-17/NOTE.md` on its kernel width). It agrees with our official-package fall-size result (`../fall-size/`): a fall that size is about twice as common under a real fall, and common without one.
 
